@@ -10,7 +10,7 @@
 
 The diagram below shows how the HPC system is structured, including login nodes, compute nodes, and shared storage:
 
-![HPC Diagram](assets/fig1.png)
+![assets/fig1.png](assets/fig1.png)
 
 ---
 
