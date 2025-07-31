@@ -20,8 +20,6 @@ The diagram below shows how the HPC system is structured, including login nodes,
 
 The HPC system organizes user files under a shared project directory. This structure ensures a clean and manageable workspace for each user.
 
-![HPC Diagram](assets/fig1.png)
-
 
 
 
