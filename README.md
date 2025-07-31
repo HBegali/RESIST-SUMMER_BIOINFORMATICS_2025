@@ -12,7 +12,7 @@ The diagram below shows how the HPC system is structured, including login nodes,
 
 ## HPC Diagram
 <p align="center">
-  <img src="assets/fig1.png" alt="HPC Diagram" width="700" />
+  <img src="assets/Fig1.png" alt="HPC Diagram" width="700" />
 </p>
 
 ---
