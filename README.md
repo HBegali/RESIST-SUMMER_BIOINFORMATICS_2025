@@ -22,6 +22,12 @@ The diagram below shows how the HPC system is structured, including login nodes,
 The HPC system organizes user files under a shared project directory. This structure ensures a clean and manageable workspace for each user.
 
 
+## HPC Structure
+<p align="center">
+  <img src="assets/Fig2.png" alt="HPC Structure" width="700" />
+</p>
+
+---
 
 
 --
@@ -36,9 +42,14 @@ You can transfer files between your local computer and the HPC system using the 
 3. Press **Enter**.
 4. Navigate through the following folders: - `project` - `summerinformatics` - `2025_Users`
 5. Create your personal folder using your name (e.g., `Hanan`, `Erik`, etc.).
+
+## HPC Local Accessing
 <p align="center">
-  <img src="assets/fig1.png" alt="Pipeline Diagram" width="700" />
+  <img src="assets/Fig3.png" alt="HPC Local Accessing" width="700" />
 </p>
+
+---
+
 
 
  ## 🧪 Activating Compute Node & Launching RStudio To use computing power (cores, memory) for analysis,
@@ -46,9 +57,25 @@ You can transfer files between your local computer and the HPC system using the 
   ### 📝 Steps to Start an R Session on HPC ####
   🔗 Step 1: Login to the HPC Web Portal
   1. Open your browser and go to: ``` https://leineood.mh-hannover.local/ ```
-  2. Enter your **MHH username and password** (same as your hospital/work PC login). ![Login Screen](assets/fig5.png) ---
+  2. Enter your **MHH username and password** (same as your hospital/work PC login).
+
+  ## Launching RStudio
+  <p align="center">
+    <img src="assets/Fig4.png" alt="Launching RStudio" width="700" />
+  </p>
+
+  ---
+
+
   #### 🧠 Step 2: Launch RStudio Session
-   1. Click on: - **CPU – Software** - Then select **RStudio - Advanced** ![RStudio Selection](assets/fig6.png) ---
+   1. Click on: - **CPU – Software** - Then select **RStudio - Advanced**
+
+   ##  RStudio Session
+   <p align="center">
+     <img src="assets/Fig5.png" alt=" RStudio Session" width="700" />
+   </p>
+
+   ---
    #### ⚙️ Step 3: Configure Your Job Settings On the job submission page, fill in the following details:
    - **Container Path**: ``` /hpc/project/summerinformatics/environments/summerinformatics_RStudio.sif ```
     - **Password**: Choose a temporary session password, e.g., `123`
@@ -56,11 +83,33 @@ You can transfer files between your local computer and the HPC system using the 
     - **Memory (MB)**: `16000`
     - **Job Time (hours)**: `8`
     - **Reservation**: `XXX` *(if applicable; otherwise leave it blank)* Leave all other fields as default.
-    Then click **Launch** to start your RStudio session. ![Job Submission Example](assets/fig7.png)
+    Then click **Launch** to start your RStudio session.
 
+    ##  RStudio Launch
+    <p align="center">
+      <img src="assets/Fig6.png" alt=" RStudio Launch" width="700" />
+    </p>
+   ---
+   - **Wait**: Click on Connect to Rstudio Server
 
+   ##  RStudio Server
+   <p align="center">
+     <img src="assets/Fig7.png" alt=" RStudio Server" width="700" />
+   </p>
+  ---
+  - **insert** 123 password and do not save that, Then click
+##  RStudio active
+  <p align="center">
+    <img src="assets/Fig8.png" alt=" RStudio active" width="700" />
+  </p>
+  ---
+#### ⚙️ Step 4: we you are done, you have to terminate your job by click Cancel.     
 
-
+##  RStudio end job
+<p align="center">
+  <img src="assets/Fig9.png" alt=" RStudio end job" width="700" />
+</p>
+---
 
 
 
@@ -70,10 +119,6 @@ You can transfer files between your local computer and the HPC system using the 
 
 - **Contact:** hananalbegali@gmail.com
 
----
 
-
-
----
 
 ## 📁 Repository Structure
