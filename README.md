@@ -68,99 +68,13 @@ You can transfer files between your local computer and the HPC system using the 
 
 
 
-
-
-
-This pipeline processes `.fcs` files, performs clustering, subsampling, visualization, statistical testing, and generates publication-ready plots to assess immune profiles in **HDV patients** and **Healthy Controls**.
-
-## Pipeline Diagram
-
-<p align="center">
-  <img src="assets/FrameWork_HB_20250725.png" alt="Pipeline Diagram" width="700" />
-</p>
-
-## 🔬 Methodology
-
-### 1. Data Preprocessing & Marker Harmonization
-- Import `.fcs` using `flowCore::read.flowSet()`
-- Extract metadata, clean marker names
-- Apply biexponential transformation on selected markers
-
-### 2. Data Transformation & Clustering
-- Quantile normalization (`matrixStats`)
-- Clustering using `FlowSOM` and `ConsensusClusterPlus`
-- Parallel computation using `doParallel` + `foreach`
-
-### 3. Subsampling & Deduplication
-- Random sampling (100,000–300,000 cells per group)
-- Ensure balanced sample sizes across conditions
-
-### 4. Dimensionality Reduction & Visualization
-- Use `Rtsne` for t-SNE plots
-- Visualize clusters using `ggplot2`, `scattermore`, `ggpointdensity`, etc.
-
-### 5. Cluster Quantification & Marker Analysis
-- Aggregate marker expression per cluster
-- Visualize trends across clinical groups/timepoints
-
-### 6. Statistical Testing
-- Wilcoxon test, Kruskal–Wallis + Dunn’s post hoc
-- Adjust p-values using Benjamini–Hochberg (FDR)
-- Annotate plots with `rstatix`, `ggsignif`
-
-### 7. Heatmap Generation
-- Cluster-level marker expression heatmaps using `pheatmap`
-- Stratified by group and timepoint
-
-## 🧪 Experimental Groups
-
-- Healthy Controls (HC)
-- Baseline HCV (BLHCV)
-- HDV Subgroups:
-  - Baseline: BLResponder, BLNonResponder
-  - Week 3: W3Responder, W3NonResponder
-  - Week 48: W48Responder, W48NonResponder
-
-## 🛠️ Environment
-
-All analyses were performed on a high-performance computing (HPC) cluster at Hannover Medical School (MHH):
-
-- **R version**: 4.3.1
-- **Resources**: 400 GB RAM, 4 CPU cores/node
-- **Data formats**: `.fcs`, `.rds`, `.csv`
-
-### 📦 Key Packages
-
-| Task | Packages |
-|------|----------|
-| Import & transform | `flowCore`, `FlowSOM` |
-| Clustering & normalization | `ConsensusClusterPlus`, `matrixStats`, `doParallel`, `foreach` |
-| Dimensionality reduction | `Rtsne` |
-| Data wrangling | `dplyr`, `tidyr`, `stringr`, `purrr`, `tibble`, `forcats` |
-| Plotting | `ggplot2`, `ggrepel`, `scattermore`, `ggrastr`, `ggpointdensity`, `ggridges`, `cowplot`, `patchwork` |
-| Stats | `rstatix`, `ggsignif`, `stats` |
-| Heatmaps | `pheatmap` |
-
-## 📘 How to Cite
-
-If you use this pipeline or any part of it in your research, please cite the relevant R packages listed above and acknowledge this repository.
-
----
-
 ## 🧠 Contributors
 
-- **Project Lead:** BDAG members — Prof. Drs. Daniel Depledge, Marco Galardini, Chris Lauber, Dr. med. Helenie Kefalakes  
-- **Bioinformatics Analysis:** Hanan Begali  
-- **Wet Lab Team:** AG_Kefalakes: PhD student Reem Hoblos
 - **Contact:** hananalbegali@gmail.com
 
 ---
 
-## 📌 License
 
-This repository is made available for academic use only. Please refer to individual package licenses for usage details.
-
----
 
 ---
 
