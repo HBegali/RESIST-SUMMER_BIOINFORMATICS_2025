@@ -12,7 +12,7 @@ The diagram below shows how the HPC system is structured, including login nodes,
 
 ![assets/fig1.png](assets/fig1.png)
 <p align="center">
-  <img src="assets/assets/fig1.png" alt="Pipeline Diagram" width="700" />
+  <img src="assets/fig1.png" alt="Pipeline Diagram" width="700" />
 </p>
 
 ---
