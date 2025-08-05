@@ -120,7 +120,7 @@ You can transfer files between your local computer and the HPC system using the 
 ## 🧠 Contributors
 
 - **Contact:** hananalbegali@gmail.com
-
+- Depledgelab: Hanan & Erik 
 
 
 ## 📁 Repository Structure
