@@ -85,6 +85,12 @@ You can transfer files between your local computer and the HPC system using the 
     - **Reservation**: `XXX` *(if applicable; otherwise leave it blank)* Leave all other fields as default.
     - Then click **Launch** to start your RStudio session.
 
+        ##  RStudio Launch
+        <p align="center">
+          <img src="assets/Fig6_clean.png" alt=" RStudio Launch" width="700" />
+        </p>
+
+
    ---
    - **Wait**: Click on Connect to Rstudio Server
 
