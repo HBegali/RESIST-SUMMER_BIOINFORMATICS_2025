@@ -87,7 +87,7 @@ You can transfer files between your local computer and the HPC system using the 
 
     ##  RStudio Launch
     <p align="center">
-      <img src="assets/Fig6.png" alt=" RStudio Launch" width="700" />
+      <img src="assets/fig6.png" alt=" RStudio Launch" width="700" />
     </p>
    ---
    - **Wait**: Click on Connect to Rstudio Server
